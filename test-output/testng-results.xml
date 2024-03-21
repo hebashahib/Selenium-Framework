@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-22T00:58:27 GST" name="Suite" finished-at="2024-03-22T01:00:00 GST" duration-ms="93079">
+  <suite started-at="2024-03-22T01:05:00 GST" name="Suite" finished-at="2024-03-22T01:05:58 GST" duration-ms="58107">
     <groups>
       <group name="Purchase">
-        <method signature="SubmitOrderTest.SubmitOrderCheck(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.SubmitOrderTest@53fe15ff]" name="SubmitOrderCheck" class="rahulshettyacademy.Tests.SubmitOrderTest"/>
+        <method signature="SubmitOrderTest.SubmitOrderCheck(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.SubmitOrderTest@2eae8e6e]" name="SubmitOrderCheck" class="rahulshettyacademy.Tests.SubmitOrderTest"/>
       </group> <!-- Purchase -->
-      <group name="ErrorValidation">
-        <method signature="ErrorValidationsTest.LoginCheck()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationsTest@247310d0]" name="LoginCheck" class="rahulshettyacademy.Tests.ErrorValidationsTest"/>
-        <method signature="ErrorValidationsTest.VerifyOrderNameCheck()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationsTest@247310d0]" name="VerifyOrderNameCheck" class="rahulshettyacademy.Tests.ErrorValidationsTest"/>
-      </group> <!-- ErrorValidation -->
     </groups>
-    <test started-at="2024-03-22T00:58:27 GST" name="SubmitOrderTest" finished-at="2024-03-22T00:59:24 GST" duration-ms="57309">
+    <test started-at="2024-03-22T01:05:00 GST" name="SubmitOrderTest" finished-at="2024-03-22T01:05:58 GST" duration-ms="58067">
       <class name="rahulshettyacademy.Tests.SubmitOrderTest">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:rahulshettyacademy.Tests.SubmitOrderTest@53fe15ff]" started-at="2024-03-22T00:58:27 GST" name="LaunchApplication" finished-at="2024-03-22T00:58:39 GST" duration-ms="11471" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:rahulshettyacademy.Tests.SubmitOrderTest@2eae8e6e]" started-at="2024-03-22T01:05:00 GST" name="LaunchApplication" finished-at="2024-03-22T01:05:12 GST" duration-ms="12183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="SubmitOrderCheck(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.SubmitOrderTest@53fe15ff]" started-at="2024-03-22T00:58:39 GST" name="SubmitOrderCheck" data-provider="GetData" finished-at="2024-03-22T00:58:56 GST" duration-ms="17546" status="PASS">
+        <test-method signature="SubmitOrderCheck(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.SubmitOrderTest@2eae8e6e]" started-at="2024-03-22T01:05:12 GST" name="SubmitOrderCheck" data-provider="GetData" finished-at="2024-03-22T01:05:30 GST" duration-ms="17665" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,15 +25,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubmitOrderCheck -->
-        <test-method is-config="true" signature="CloseWindow()[pri:0, instance:rahulshettyacademy.Tests.SubmitOrderTest@53fe15ff]" started-at="2024-03-22T00:58:56 GST" name="CloseWindow" finished-at="2024-03-22T00:58:56 GST" duration-ms="148" status="PASS">
+        <test-method is-config="true" signature="CloseWindow()[pri:0, instance:rahulshettyacademy.Tests.SubmitOrderTest@2eae8e6e]" started-at="2024-03-22T01:05:30 GST" name="CloseWindow" finished-at="2024-03-22T01:05:30 GST" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseWindow -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:rahulshettyacademy.Tests.SubmitOrderTest@53fe15ff]" started-at="2024-03-22T00:58:56 GST" name="LaunchApplication" finished-at="2024-03-22T00:59:06 GST" duration-ms="9942" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:rahulshettyacademy.Tests.SubmitOrderTest@2eae8e6e]" started-at="2024-03-22T01:05:30 GST" name="LaunchApplication" finished-at="2024-03-22T01:05:40 GST" duration-ms="9835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="SubmitOrderCheck(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.SubmitOrderTest@53fe15ff]" started-at="2024-03-22T00:59:06 GST" name="SubmitOrderCheck" data-provider="GetData" finished-at="2024-03-22T00:59:24 GST" duration-ms="17789" status="PASS">
+        <test-method signature="SubmitOrderCheck(java.util.HashMap)[pri:0, instance:rahulshettyacademy.Tests.SubmitOrderTest@2eae8e6e]" started-at="2024-03-22T01:05:40 GST" name="SubmitOrderCheck" data-provider="GetData" finished-at="2024-03-22T01:05:58 GST" duration-ms="17839" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,39 +44,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubmitOrderCheck -->
-        <test-method is-config="true" signature="CloseWindow()[pri:0, instance:rahulshettyacademy.Tests.SubmitOrderTest@53fe15ff]" started-at="2024-03-22T00:59:24 GST" name="CloseWindow" finished-at="2024-03-22T00:59:24 GST" duration-ms="113" status="PASS">
+        <test-method is-config="true" signature="CloseWindow()[pri:0, instance:rahulshettyacademy.Tests.SubmitOrderTest@2eae8e6e]" started-at="2024-03-22T01:05:58 GST" name="CloseWindow" finished-at="2024-03-22T01:05:58 GST" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseWindow -->
       </class> <!-- rahulshettyacademy.Tests.SubmitOrderTest -->
     </test> <!-- SubmitOrderTest -->
-    <test started-at="2024-03-22T00:59:24 GST" name="ErrorValidationsTest" finished-at="2024-03-22T01:00:00 GST" duration-ms="35730">
-      <class name="rahulshettyacademy.Tests.ErrorValidationsTest">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationsTest@247310d0]" started-at="2024-03-22T00:59:24 GST" name="LaunchApplication" finished-at="2024-03-22T00:59:34 GST" duration-ms="9789" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchApplication -->
-        <test-method signature="LoginCheck()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationsTest@247310d0]" started-at="2024-03-22T00:59:34 GST" name="LoginCheck" finished-at="2024-03-22T00:59:35 GST" duration-ms="1366" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginCheck -->
-        <test-method is-config="true" signature="CloseWindow()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationsTest@247310d0]" started-at="2024-03-22T00:59:35 GST" name="CloseWindow" finished-at="2024-03-22T00:59:36 GST" duration-ms="153" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseWindow -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationsTest@247310d0]" started-at="2024-03-22T00:59:36 GST" name="LaunchApplication" finished-at="2024-03-22T00:59:45 GST" duration-ms="9749" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchApplication -->
-        <test-method signature="VerifyOrderNameCheck()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationsTest@247310d0]" started-at="2024-03-22T00:59:45 GST" name="VerifyOrderNameCheck" finished-at="2024-03-22T01:00:00 GST" duration-ms="14527" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyOrderNameCheck -->
-        <test-method is-config="true" signature="CloseWindow()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidationsTest@247310d0]" started-at="2024-03-22T01:00:00 GST" name="CloseWindow" finished-at="2024-03-22T01:00:00 GST" duration-ms="133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseWindow -->
-      </class> <!-- rahulshettyacademy.Tests.ErrorValidationsTest -->
+    <test started-at="2024-03-22T01:05:58 GST" name="ErrorValidationsTest" finished-at="2024-03-22T01:05:58 GST" duration-ms="1">
     </test> <!-- ErrorValidationsTest -->
   </suite> <!-- Suite -->
 </testng-results>
