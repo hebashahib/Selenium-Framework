@@ -39,6 +39,9 @@ public class ProductCatalogPage extends AbstractComponent{
 	@FindBy(css="[routerlink*='cart']")
 	WebElement Cart;
 	
+	@FindBy(css=".ng-animating")
+	WebElement Spinner;
+	
 	By ProductsBy = By.cssSelector(".mb-3");
 	By AddToCartButton = By.cssSelector(".card-body button:last-of-type");
 	By SideBar = By.cssSelector("#toast-container");
@@ -54,7 +57,7 @@ public class ProductCatalogPage extends AbstractComponent{
 		WebElement prod  = GetProductList().stream().filter(Product->Product.findElement(By.cssSelector("b")).getText().equals(ProductName)).findFirst().orElse(null);
 		
 		//WebElement prod = GetProductList().stream().filter(Product->Product.findElement(By.cssSelector("b")).getText().equals(ProductName)).findFirst().orElse(null);
-		prod.findElement(AddToCartButton).click();
+		//prod.findElement(AddToCartButton).click();
 		return prod;
 	}
 	
@@ -63,12 +66,12 @@ public class ProductCatalogPage extends AbstractComponent{
 		WebElement prod = GetProductByName(ProductName);
 		prod.findElement(AddToCartButton).click();
 		WaitForVisibilityOFElement(SideBar);
-		WaitForVisibilityOFElement(CartButton);
+		WaitForWebElementToDisappear(Spinner);
 		
 	}
 	public CartPage GoToCart()
 	{
-		
+				
 		Cart.click();
 		CartPage cartPage = new CartPage(driver);
 		return cartPage;

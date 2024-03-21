@@ -31,7 +31,7 @@ public class ErrorValidationsTest extends BaseTest{
 		AssertJUnit.assertEquals("Incorrect email or password.", landingPage.GetErrorMessage());
 	}
 	
-	@Test
+	@Test(groups = {"ErrorValidation"})
 	public void VerifyOrderNameCheck() throws IOException {
 		// TODO Auto-generated method stub
 		
