@@ -48,7 +48,7 @@ public class SubmitOrderTest extends BaseTest
 		ProductCatalogPage productCatalog = landingPage.LoginApplication(input.get("Email"), input.get("Password"));
 		AbstractComponent CommonFunctions = new AbstractComponent(driver);
 		List<WebElement> Products = productCatalog.GetProductList();
-		productCatalog.GetProductByName(input.get("Product"));
+		//productCatalog.GetProductByName(input.get("Product"));
 		productCatalog.AddProductToCart(input.get("Product"));
 		CartPage cartPage = productCatalog.GoToCart();
 		Boolean match = cartPage.VerifyProductName(input.get("Product"));

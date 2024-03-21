@@ -5,11 +5,9 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
+
 
 import rahulshettyacademy.AbstractComponents.AbstractComponent;
 
@@ -23,7 +21,7 @@ public class ProductCatalogPage extends AbstractComponent{
 		PageFactory.initElements(driver, this);
 	}
 	@FindBy(css=".mb-3")
-	List<WebElement> ListOfProducts;
+	List<WebElement> Products;
 	
 	
 	
@@ -38,7 +36,6 @@ public class ProductCatalogPage extends AbstractComponent{
 	
 
 	
-	
 	@FindBy(css="[routerlink*='cart']")
 	WebElement Cart;
 	
@@ -50,12 +47,14 @@ public class ProductCatalogPage extends AbstractComponent{
 	public List<WebElement> GetProductList()
 	{
 		WaitForVisibilityOFElement(ProductsBy);
-		return ListOfProducts;
+		return Products;
 	}
 	public WebElement GetProductByName(String ProductName)
 	{	
-		WebElement prod = ListOfProducts.stream().filter(ListOfProduct->ListOfProduct.findElement(By.cssSelector("b")).getText().equals(ProductName)).findFirst().orElse(null);
-		//prod.findElement(AddToCartButton).click();
+		WebElement prod  = GetProductList().stream().filter(Product->Product.findElement(By.cssSelector("b")).getText().equals(ProductName)).findFirst().orElse(null);
+		
+		//WebElement prod = GetProductList().stream().filter(Product->Product.findElement(By.cssSelector("b")).getText().equals(ProductName)).findFirst().orElse(null);
+		prod.findElement(AddToCartButton).click();
 		return prod;
 	}
 	
