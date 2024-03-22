@@ -19,6 +19,8 @@ public class CartPage extends AbstractComponent{
 		// TODO Auto-generated constructor stub
 	}
 
+// add new comment
+
 	@FindBy(css=".cartSection h3")
 	List<WebElement> ListOfProductsInCart;
 	
